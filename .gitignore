@@ -14,3 +14,7 @@ $RECYCLE.BIN/
 miniprogram/node_modules/
 miniprogram/miniprogram_npm/
 cloudfunctions/**/node_modules
+
+
+cloudfunctions/**/package-lock.json
+miniprogram/package-lock.json
