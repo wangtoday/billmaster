@@ -1,6 +1,7 @@
 const app = getApp()
 
 
+
 Page({
   data: {
     avatarUrl: './user-unlogin.png',
@@ -34,6 +35,12 @@ Page({
         }
       }
     })
+  },
+
+  onShow: ()=>{
+    console.log('im in this page')
+    console.log('')
+    console.log('获取 globbal app , ', app.globalData);
   },
 
   onGetUserInfo: function(e) {
