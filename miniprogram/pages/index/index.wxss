@@ -22,7 +22,8 @@ page {
 }
 
 .userinfo {
-  padding-left: 120rpx;
+  padding-left: 80rpx;
+  padding-right: 40rpx;
 }
 
 .userinfo-avatar {
@@ -48,7 +49,7 @@ page {
   color: #007aff;
   background-color: white;
   background-size: cover;
-  text-align: left;
+  text-align: center;
   padding-left: 0;
   margin-left: 10px;
 }

@@ -1,0 +1,19 @@
+<!--pages/chooseLib/chooseLib.wxml-->
+<view class="container">
+
+    <view class="list">
+        <view class="list-item">
+            <text class="black">Profile Console</text>
+        </view>
+        <view class="list-item">
+            <text class="request-text">请使用 2.2.3 或以上的基础库以使用云能力</text>
+        </view>
+        <view>
+            <button bindtap="logout">
+                退出登录
+            </button>
+        </view>
+    </view>
+
+</view>
+
