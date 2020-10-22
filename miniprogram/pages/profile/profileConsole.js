@@ -9,9 +9,7 @@ Page({
 
     app.globalData.openid = null;
     app.globalData.userInfo = {};
-    wx.redirectTo({
-      url: '../index/index',
-    });
+    wx.navigateBack();
     return;
   },
 });
