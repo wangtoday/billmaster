@@ -1,21 +1,30 @@
 <view class="container">
     <!-- 用户 openid -->
     <view class="userinfo">
+        <!--        判断用户是否登录-->
         <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-avatar"
-                style="background-image: url({{avatarUrl}})" size="default"></button>
-        <!-- 判断是否具有用户信息 -->
+                style="background-image: url({{avatarUrl}});background-size: cover" size="default"
+        >
+        </button>
+        <view class="userinfo-nickname-wrapper" wx:if="{{userInfo&&userInfo.avatarUrl}}">
 
-        <view class="userinfo-nickname-wrapper" wx:if="{{!openid&&!loading}}">
-            <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
-        </view>
-        <view class="userinfo-nickname-wrapper" wx:if="{{!openid&&loading}}">
-            <mp-loading duration="{{900}}" ext-class="demo0" type="dot-gray" show="{{!openid}}" animated="{{true}}">
-            </mp-loading>
-        </view>
 
-        <view class="userinfo-nickname-wrapper" wx:if="{{openid&&!loading}}">
-            <view class="userinfo-nickname" bindtap="navigateToProfileConsole">
-                {{userInfo.nickName}}
+            <view class="userinfo-nickname-wrapper" wx:if="{{openid&&!loading}}">
+                <view class="userinfo-nickname" bindtap="navigateToProfileConsole">
+                    {{userInfo.nickName}}
+                </view>
+            </view>
+        </view>
+        <view class="userinfo-nickname-wrapper" wx:elif="{{!(userInfo&&userInfo.avatarUrl)}}">
+            <button open-type="getUserInfo" hover-class="none" bindgetuserinfo="onGetUserInfo"
+                    type="primary" size="default"
+                    wx:if="{{!loading}}"
+            >授权登录
+            </button>
+
+            <view class="userinfo-nickname-wrapper" wx:if="{{loading}}">
+                <mp-loading duration="{{900}}" ext-class="demo0" type="dot-gray" show="{{!openid}}" animated="{{true}}">
+                </mp-loading>
             </view>
         </view>
 

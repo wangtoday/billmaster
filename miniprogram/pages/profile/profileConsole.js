@@ -3,12 +3,12 @@ const app = getApp();
 Page({
   data: {},
   onLoad: function() {
-    console.log('page loaded');
+
   },
   logout: function() {
-    console.log('登出了');
-    app.globalData.openid = null;
 
+    app.globalData.openid = null;
+    app.globalData.userInfo = {};
     wx.redirectTo({
       url: '../index/index',
     });
