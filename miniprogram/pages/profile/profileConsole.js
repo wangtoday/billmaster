@@ -8,8 +8,6 @@ Page({
 
   },
   logout: function() {
-
-    app.globalData.openid = null;
     app.globalData.userInfo = {};
     console.log('返回上一页');
     wx.navigateBack();

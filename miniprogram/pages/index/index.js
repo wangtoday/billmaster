@@ -12,13 +12,13 @@ Page({
   },
 
   onLoad: function() {
+    // 是否启用 云开发
     if (!wx.cloud) {
       wx.redirectTo({
         url: '../chooseLib/chooseLib',
       });
       return;
     }
-    console.log('app.globalData.userInfo.avatarUrl: ', app.globalData);
     this.setData({
       userInfo: app.globalData.userInfo,
       avatarUrl: app.globalData.userInfo ? app.globalData.userInfo.avatarUrl : based64Img,
@@ -26,9 +26,10 @@ Page({
   },
 
   onShow: function() {
-    console.log('显示 app::: ', app, app.globalData.openid);
+    console.log('这个是我返回以后过来的把- ', app.globalData);
+    // 每次从离开这个页面到进入这个页面时候的操作,
+    // 从 app 中 拿取需要的信息 填写到这里
     this.setData({
-      openid: app.globalData.openid,
       userInfo: app.globalData.userInfo,
       avatarUrl: app.globalData.userInfo ? app.globalData.userInfo.avatarUrl : based64Img,
     });
@@ -45,18 +46,20 @@ Page({
         data: {},
         success: res => {
           console.log('来了吗::: ', res);
-          app.globalData.openid = res.result.openid;
-          app.globalData.userInfo = res.result.event.userInfo;
-          app.globalData.userInfo.avatarUrl = e.detail.userInfo.avatarUrl;
+          console.log('e 用户的详细信息来自 e  ', e);
+          // 获取到信息以后, 把获取的信息填写到 app 的 global 中
+
+          const userInfo = { openid: res.result.openid, ...e.detail.userInfo };
+          console.log('用户信息:', userInfo);
+          this.setUserInfoGlobally(userInfo);
+
+          // set data 本身 component 里面使用
           this.setData({
             logged: true,
-            avatarUrl: e.detail.userInfo.avatarUrl,
             userInfo: e.detail.userInfo,
-          });
-          this.setData({
-            openid: app.globalData.openid,
             loading: false,
           });
+
         },
         fail: err => {
           wx.navigateTo({
@@ -65,6 +68,16 @@ Page({
         },
       });
     }
+  },
+  setUserInfoGlobally: function(userInfo) {
+    /**
+     * 目前我们用户保存的信息
+     * username
+     * openid
+     * avatarUrl
+     */
+    // Note: 后面未来可以在这里添加一些逻辑操作
+    app.globalData.userInfo = userInfo;
   },
   navigateToProfileConsole: function() {
     // 禁用跳转了,
