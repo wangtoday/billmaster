@@ -26,7 +26,7 @@ Page({
   },
 
   onShow: function() {
-    console.log('这个是我返回以后过来的把- ', app.globalData);
+
     // 每次从离开这个页面到进入这个页面时候的操作,
     // 从 app 中 拿取需要的信息 填写到这里
     this.setData({
@@ -45,12 +45,11 @@ Page({
         name: 'login',
         data: {},
         success: res => {
-          console.log('来了吗::: ', res);
-          console.log('e 用户的详细信息来自 e  ', e);
+
           // 获取到信息以后, 把获取的信息填写到 app 的 global 中
 
           const userInfo = { openid: res.result.openid, ...e.detail.userInfo };
-          console.log('用户信息:', userInfo);
+
           this.setUserInfoGlobally(userInfo);
 
           // set data 本身 component 里面使用

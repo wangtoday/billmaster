@@ -8,8 +8,7 @@ Page({
 
   },
   logout: function() {
-    app.globalData.userInfo = {};
-    console.log('返回上一页');
+    app.globalData.userInfo = {}; // 清空 global 中的 userInfo 信息
     wx.navigateBack();
     return;
   },
