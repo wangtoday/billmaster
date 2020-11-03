@@ -16,6 +16,7 @@
     <list default="true" id="ad95f3eb-15d1-46b9-af88-6c34630e6e3b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miniprogram/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/index/index.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miniprogram/pages/profile/profileConsole.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/profile/profileConsole.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +66,10 @@
       <option name="presentableId" value="Default" />
       <updated>1603259870638</updated>
       <workItem from="1603259871676" duration="4749000" />
-      <workItem from="1603268899919" duration="12892000" />
+      <workItem from="1603268899919" duration="12945000" />
+      <workItem from="1603442563682" duration="6000" />
+      <workItem from="1603443993501" duration="201000" />
+      <workItem from="1604300120051" duration="1242000" />
     </task>
     <task id="LOCAL-00001" summary="add:  登录-&gt;profile 页面-&gt;登出-&gt;index页面 流程">
       <created>1603272821572</created>
@@ -95,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603355106653</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="bug: 页面跳转的一些逻辑漏洞">
+      <created>1603356933680</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603356933680</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,13 +129,14 @@
     <MESSAGE value="config: ide 配置文件" />
     <MESSAGE value="refact: update gitignore content" />
     <MESSAGE value="add: 添加新的auth逻辑;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: 添加新的auth逻辑;" />
+    <MESSAGE value="bug: 页面跳转的一些逻辑漏洞" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug: 页面跳转的一些逻辑漏洞" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="803" y="293" key="CommitChangelistDialog2" timestamp="1603355106355">
+    <state x="803" y="293" key="CommitChangelistDialog2" timestamp="1603356933500">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="803" y="293" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1603355106355" />
+    <state x="803" y="293" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1603356933500" />
     <state x="844" y="146" width="922" height="946" key="SettingsEditor" timestamp="1603339106027">
       <screen x="51" y="23" width="2509" height="1417" />
     </state>
@@ -133,14 +145,14 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1054" y="461" width="933" height="518" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603273136334" />
-    <state x="968" y="469" width="624" height="502" key="find.popup" timestamp="1603354326678">
+    <state x="968" y="469" width="624" height="502" key="find.popup" timestamp="1604384173471">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="968" y="469" width="624" height="502" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1603354326678" />
-    <state x="938" y="330" width="684" height="687" key="search.everywhere.popup" timestamp="1603356591590">
+    <state x="968" y="469" width="624" height="502" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1604384173471" />
+    <state x="938" y="330" width="684" height="687" key="search.everywhere.popup" timestamp="1604385295710">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="938" y="330" width="684" height="687" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1603356591590" />
+    <state x="938" y="330" width="684" height="687" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1604385295710" />
     <state x="970" y="348" width="670" height="676" key="search.everywhere.popup/51.23.2509.1417@51.23.2509.1417" timestamp="1603260028008" />
   </component>
 </project>

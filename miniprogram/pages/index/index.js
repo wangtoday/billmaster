@@ -18,18 +18,19 @@ Page({
       });
       return;
     }
-    console.log('app.globalData.userInfo.avatarUrl: ',app.globalData.userInfo.avatarUrl);
+    console.log('app.globalData.userInfo.avatarUrl: ', app.globalData);
     this.setData({
       userInfo: app.globalData.userInfo,
-      avatarUrl: app.globalData.userInfo.avatarUrl ? app.globalData.userInfo.avatarUrl : based64Img,
+      avatarUrl: app.globalData.userInfo ? app.globalData.userInfo.avatarUrl : based64Img,
     });
   },
 
   onShow: function() {
+    console.log('显示 app::: ', app, app.globalData.openid);
     this.setData({
       openid: app.globalData.openid,
       userInfo: app.globalData.userInfo,
-      avatarUrl: app.globalData.userInfo.avatarUrl ? app.globalData.userInfo.avatarUrl : based64Img,
+      avatarUrl: app.globalData.userInfo ? app.globalData.userInfo.avatarUrl : based64Img,
     });
   },
 
@@ -43,8 +44,10 @@ Page({
         name: 'login',
         data: {},
         success: res => {
+          console.log('来了吗::: ', res);
           app.globalData.openid = res.result.openid;
-          app.globalData.userInfo = res.userInfo;
+          app.globalData.userInfo = res.result.event.userInfo;
+          app.globalData.userInfo.avatarUrl = e.detail.userInfo.avatarUrl;
           this.setData({
             logged: true,
             avatarUrl: e.detail.userInfo.avatarUrl,

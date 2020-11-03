@@ -7,8 +7,6 @@
         >
         </button>
         <view class="userinfo-nickname-wrapper" wx:if="{{userInfo&&userInfo.avatarUrl}}">
-
-
             <view class="userinfo-nickname-wrapper" wx:if="{{openid&&!loading}}">
                 <view class="userinfo-nickname" bindtap="navigateToProfileConsole">
                     {{userInfo.nickName}}
