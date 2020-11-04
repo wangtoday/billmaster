@@ -27,7 +27,7 @@ Page({
     });
   },
   logout: function() {
-    app.globalData.userInfo = {}; // 清空 global 中的 userInfo 信息
+    app.globalData.userInfo = null; // 清空 global 中的 userInfo 信息
     wx.navigateBack();
     return;
   },

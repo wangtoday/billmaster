@@ -27,7 +27,7 @@ Page({
   },
 
   onShow: function() {
-
+    console.log('on show me index');
     // 每次从离开这个页面到进入这个页面时候的操作,
     // 从 app 中 拿取需要的信息 填写到这里
     this.setData({
