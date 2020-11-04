@@ -12,6 +12,7 @@ Page({
   },
 
   onLoad: function() {
+    console.log('load me index');
     // 是否启用 云开发
     if (!wx.cloud) {
       wx.redirectTo({
@@ -49,13 +50,14 @@ Page({
           // 获取到信息以后, 把获取的信息填写到 app 的 global 中
 
           const userInfo = { openid: res.result.openid, ...e.detail.userInfo };
+          console.log(e);
 
           this.setUserInfoGlobally(userInfo);
 
           // set data 本身 component 里面使用
           this.setData({
             logged: true,
-            userInfo: e.detail.userInfo,
+            userInfo: userInfo,
             loading: false,
           });
 

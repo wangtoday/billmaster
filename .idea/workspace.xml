@@ -23,6 +23,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miniprogram/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/index/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miniprogram/pages/profile/profileConsole.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/profile/profileConsole.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/profile/profileConsole.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/profile/profileConsole.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/profile/profileConsole.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/profile/profileConsole.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/profile/profileConsole.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/profile/profileConsole.wxss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +78,7 @@
       <workItem from="1603442563682" duration="6000" />
       <workItem from="1603443993501" duration="201000" />
       <workItem from="1604300120051" duration="1380000" />
-      <workItem from="1604392145893" duration="1849000" />
+      <workItem from="1604392145893" duration="6304000" />
     </task>
     <task id="LOCAL-00001" summary="add:  登录-&gt;profile 页面-&gt;登出-&gt;index页面 流程">
       <created>1603272821572</created>
@@ -126,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604394011836</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="refactor: 移出不需要的console">
+      <created>1604395264494</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604395264494</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,13 +174,14 @@
     <MESSAGE value="bug: 页面跳转的一些逻辑漏洞" />
     <MESSAGE value="todo: 整个跳转流程的 user detail 有问题" />
     <MESSAGE value="bug: 解决跳转流程时候 user detail 保存问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug: 解决跳转流程时候 user detail 保存问题" />
+    <MESSAGE value="refactor: 移出不需要的console" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: 移出不需要的console" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="803" y="293" key="CommitChangelistDialog2" timestamp="1604394011650">
+    <state x="803" y="293" key="CommitChangelistDialog2" timestamp="1604395264360">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="803" y="293" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1604394011650" />
+    <state x="803" y="293" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1604395264360" />
     <state x="844" y="146" width="922" height="946" key="SettingsEditor" timestamp="1603339106027">
       <screen x="51" y="23" width="2509" height="1417" />
     </state>
@@ -183,14 +194,14 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1054" y="461" width="933" height="518" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603273136334" />
-    <state x="968" y="469" width="624" height="502" key="find.popup" timestamp="1604393957693">
+    <state x="968" y="469" width="624" height="502" key="find.popup" timestamp="1604478731753">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="968" y="469" width="624" height="502" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1604393957693" />
-    <state x="938" y="330" width="684" height="687" key="search.everywhere.popup" timestamp="1604385295710">
+    <state x="968" y="469" width="624" height="502" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1604478731753" />
+    <state x="938" y="330" width="684" height="687" key="search.everywhere.popup" timestamp="1604478990664">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="938" y="330" width="684" height="687" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1604385295710" />
+    <state x="938" y="330" width="684" height="687" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1604478990664" />
     <state x="970" y="348" width="670" height="676" key="search.everywhere.popup/51.23.2509.1417@51.23.2509.1417" timestamp="1603260028008" />
   </component>
 </project>

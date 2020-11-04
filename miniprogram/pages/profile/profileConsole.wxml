@@ -2,12 +2,36 @@
 <view class="container">
 
     <view class="list">
-        <view class="list-item">
-            <text class="black">Profile Console</text>
+        <view class="list-item image-container">
+            <image class="avatarUrl-image" mode="scaleToFill" src="{{userInfo.avatarUrl}}"></image>
         </view>
-        <view class="list-item">
-            <text class="request-text">请使用 2.2.3 或以上的基础库以使用云能力</text>
-        </view>
+        <!--用户基本信息-->
+        <mp-cells ext-class="my-cells" title="" class="user-info-list">
+            <mp-cell>
+                <view>昵称</view>
+                <view slot="footer">{{userInfo.nickName}}</view>
+            </mp-cell>
+            <mp-cell>
+                <view>记录</view>
+                <view slot="footer" wx:if="{{records!=null}}" style="display: flex;flex-direction: row">{{records}}
+                    <view class="tag">条</view>
+                </view>
+                <view slot="footer" wx:else style="min-width: 100rpx">
+                    <mp-loading duration="{{900}}" ext-class="demo0" type="dot-gray"  animated="{{true}}">
+                    </mp-loading>
+                </view>
+            </mp-cell>
+            <mp-cell>
+                <view>激活日期</view>
+                <view slot="footer" wx:if="{{records!=null}}">{{activeDate}}</view>
+                <view slot="footer" wx:else style="min-width: 100rpx">
+                    <mp-loading duration="{{900}}" ext-class="demo0" type="dot-gray" animated="{{true}}">
+                    </mp-loading>
+                </view>
+            </mp-cell>
+
+        </mp-cells>
+
         <view>
             <button bindtap="logout">
                 退出登录
