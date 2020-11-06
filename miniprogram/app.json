@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/im/im",
+    "pages/records/index",
     "pages/index/index",
     "pages/profile/profileConsole",
     "pages/userConsole/userConsole",
@@ -13,8 +13,6 @@
     "pages/openapi/serverapi/serverapi",
     "pages/openapi/callback/callback",
     "pages/openapi/cloudid/cloudid",
-
-
     "pages/im/room/room"
   ],
   "tabBar": {
@@ -25,16 +23,16 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/im/im",
-        "iconPath": "images/icon_API.png",
-        "selectedIconPath": "images/icon_API_HL.png",
-        "text": "口"
+        "text": "流水",
+        "pagePath": "pages/records/index",
+        "iconPath": "images/icon_component.png",
+        "selectedIconPath": "images/icon_component_HL.png"
       },
       {
+        "text": "个人中心",
         "pagePath": "pages/index/index",
-        "iconPath": "images/icon_component.png",
-        "selectedIconPath": "images/icon_component_HL.png",
-        "text": "嗷嗷sdsds"
+        "iconPath": "images/icon_API.png",
+        "selectedIconPath": "images/icon_API_HL.png"
       }
     ]
   },

@@ -5,7 +5,7 @@ Page({
     'list': [
       {
         'text': '流水',
-        'pagePath': '/pages/im/im',
+        'pagePath':"/pages/records/index",
         'iconPath': '/images/icon_component.png',
         'selectedIconPath': '/images/icon_component_HL.png',
       },

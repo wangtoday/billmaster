@@ -1,11 +1,6 @@
 @import '/miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss';
 
-/* 引入一些 无法获取到的样式*/
-.page {
-    /*NOTE: 在使用第三方 tabbar 的情况下, 无法获取 badge的颜色
-    故在此添加*/
-    --weui-RED: #fa5151;
-}
+
 
 
 /**app.wxss**/

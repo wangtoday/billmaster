@@ -1,0 +1,10 @@
+<scroll-view scroll-y="true" style="height: {{height}};" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}"
+             scroll-top="{{scrollTop}}">
+
+    <mp-cells title="2020-10-10">
+        <mp-cell wx:for="{{records}}" wx:for-index="idx" wx:for-item="record" footer="{{record.amount}}" value="{{record.sub_type}}">
+            <image slot="icon" src="{{icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </mp-cell>
+    </mp-cells>
+</scroll-view>
+

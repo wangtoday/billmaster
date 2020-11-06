@@ -1,0 +1,11 @@
+/* 引入一些 无法获取到的样式*/
+
+/*NOTE: 在使用第三方 tabbar 的情况下, 无法获取 badge的颜色
+故在此添加*/
+mp-tabbar{
+    --weui-BG-0: #ededed;
+    --weui-BG-1: #f7f7f7;
+    --weui-BG-2: #fff;
+    --weui-BG-3: #f7f7f7;
+    --weui-RED: #fa5151;
+}

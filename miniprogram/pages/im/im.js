@@ -3,39 +3,6 @@ const app = getApp();
 Page({
   data: {},
 
-  onShow: function() {
-    if (typeof this.getTabBar === 'function' &&
-      this.getTabBar()) {
-      this.getTabBar().setData({
-        selected: 0,
-      });
-    }
-
-    const { userInfo } = app.globalData;
-    console.log(userInfo, app.globalData);
-    if (!userInfo) {
-      this.getTabBar().setData({
-        list: [
-          this.getTabBar().data.list[0],
-          {
-            ...this.getTabBar().data.list[1],
-            dot: true,
-          },
-        ],
-      });
-    }else{
-      this.getTabBar().setData({
-        list: [
-          this.getTabBar().data.list[0],
-          {
-            ...this.getTabBar().data.list[1],
-            dot: false,
-          },
-        ],
-      });
-    }
-  },
-
   onLoad: function(options) {
     if (app.globalData.openid) {
       this.setData({
