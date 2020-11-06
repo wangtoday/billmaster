@@ -18,3 +18,6 @@ cloudfunctions/**/node_modules
 
 cloudfunctions/**/package-lock.json
 miniprogram/package-lock.json
+
+# ide
+.idea
