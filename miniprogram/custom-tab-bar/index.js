@@ -1,20 +1,20 @@
+const app = getApp();
 Page({
   data: {
     'selected': 0,
     'list': [
       {
-        'text': '嗷嗷sdsds',
-        'pagePath': '/pages/index/index',
+        'text': '流水',
+        'pagePath': '/pages/im/im',
         'iconPath': '/images/icon_component.png',
         'selectedIconPath': '/images/icon_component_HL.png',
-        badge: 'New',
       },
       {
-        'pagePath': '/pages/im/im',
+        'text': '个人中心',
+        'pagePath': '/pages/index/index',
         'iconPath': '/images/icon_API.png',
         'selectedIconPath': '/images/icon_API_HL.png',
-        'text': '口',
-        dot: true,
+
       },
     ],
   },
@@ -32,5 +32,8 @@ Page({
     });
 
   },
+  onGetUserInfo:function(e){
+    console.log(e);
+  }
 
 });

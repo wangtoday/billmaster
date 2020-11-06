@@ -23,7 +23,7 @@ App({
 
     this.globalData = {
       name: '账师傅',
-      userInfo:{}
-    };
+      userInfo: null
+    }
   },
 });

@@ -21,12 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="ad95f3eb-15d1-46b9-af88-6c34630e6e3b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miniprogram/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/app.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/app.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miniprogram/custom-tab-bar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/custom-tab-bar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/custom-tab-bar/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/custom-tab-bar/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/custom-tab-bar/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/custom-tab-bar/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/im/im.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/im/im.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/index/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/index/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/index/index.wxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +81,7 @@
       <workItem from="1603442563682" duration="6000" />
       <workItem from="1603443993501" duration="201000" />
       <workItem from="1604300120051" duration="1380000" />
-      <workItem from="1604392145893" duration="9800000" />
+      <workItem from="1604392145893" duration="12501000" />
     </task>
     <task id="LOCAL-00001" summary="add:  登录-&gt;profile 页面-&gt;登出-&gt;index页面 流程">
       <created>1603272821572</created>
@@ -172,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604631541915</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="bug: 全局手动添加 --weui-RED: #fa5151; 样式, 解决WE-UI 的问题">
+      <created>1604636166240</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1604636166240</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,25 +225,26 @@
     <MESSAGE value="bug: 修复了跳转后清空app global data 的问题, set to null not {}" />
     <MESSAGE value="refactor: 添加 idea 到 gitignore" />
     <MESSAGE value="add:  引入 tabbar 到项目. (todo: need refactor)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:  引入 tabbar 到项目. (todo: need refactor)" />
+    <MESSAGE value="bug: 全局手动添加 --weui-RED: #fa5151; 样式, 解决WE-UI 的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug: 全局手动添加 --weui-RED: #fa5151; 样式, 解决WE-UI 的问题" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1018" y="473" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604634341670">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1018" y="473" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1604634341670" />
-    <state x="803" y="293" key="CommitChangelistDialog2" timestamp="1604631541781">
+    <state x="803" y="293" key="CommitChangelistDialog2" timestamp="1604636166090">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="803" y="293" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1604631541781" />
+    <state x="803" y="293" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1604636166090" />
     <state x="844" y="146" width="922" height="946" key="SettingsEditor" timestamp="1603339106027">
       <screen x="51" y="23" width="2509" height="1417" />
     </state>
     <state x="844" y="146" width="922" height="946" key="SettingsEditor/51.23.2509.1417@51.23.2509.1417" timestamp="1603339106027" />
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1604631549156">
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1604636171473">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1604631549156" />
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1604636171473" />
     <state x="1054" y="461" width="933" height="518" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1603273136334">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -243,10 +253,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="968" y="469" width="624" height="530" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1604635363381" />
-    <state x="938" y="330" width="684" height="687" key="search.everywhere.popup" timestamp="1604634503837">
+    <state x="938" y="330" width="684" height="687" key="search.everywhere.popup" timestamp="1604645112186">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="938" y="330" width="684" height="687" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1604634503837" />
+    <state x="938" y="330" width="684" height="687" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1604645112186" />
     <state x="970" y="348" width="670" height="676" key="search.everywhere.popup/51.23.2509.1417@51.23.2509.1417" timestamp="1603260028008" />
   </component>
 </project>

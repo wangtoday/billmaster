@@ -9,10 +9,12 @@ Page({
     takeSession: false,
     requestResult: '',
     openid: null,
+    activeDate: null,
+    records: null,
   },
 
   onLoad: function() {
-    console.log('load me index');
+    console.log('load me  个人中心');
     // 是否启用 云开发
     if (!wx.cloud) {
       wx.redirectTo({
@@ -34,12 +36,34 @@ Page({
       avatarUrl: app.globalData.userInfo ? app.globalData.userInfo.avatarUrl : based64Img,
     });
     if (typeof this.getTabBar === 'function' &&
-    this.getTabBar()) {
-    this.getTabBar().setData({
-      selected: 0
-    })
-  }
-},
+      this.getTabBar()) {
+      this.getTabBar().setData({
+        selected: 1,
+      });
+      const { userInfo } = app.globalData;
+      if (!userInfo) {
+        this.getTabBar().setData({
+          list: [
+            this.getTabBar().data.list[0],
+            {
+              ...this.getTabBar().data.list[1],
+              dot: true,
+            },
+          ],
+        });
+      }else{
+        this.getTabBar().setData({
+          list: [
+            this.getTabBar().data.list[0],
+            {
+              ...this.getTabBar().data.list[1],
+              dot: false,
+            },
+          ],
+        });
+      }
+    }
+  },
 
   onGetUserInfo: function(e) {
     if (e.detail.userInfo) {
@@ -55,8 +79,15 @@ Page({
           // 获取到信息以后, 把获取的信息填写到 app 的 global 中
 
           const userInfo = { openid: res.result.openid, ...e.detail.userInfo };
-          console.log(e);
-
+          this.getTabBar().setData({
+            list: [
+              this.getTabBar().data.list[0],
+              {
+                ...this.getTabBar().data.list[1],
+                dot: false,
+              },
+            ],
+          });
           this.setUserInfoGlobally(userInfo);
 
           // set data 本身 component 里面使用
@@ -84,6 +115,20 @@ Page({
      */
     // Note: 后面未来可以在这里添加一些逻辑操作
     app.globalData.userInfo = userInfo;
+
+    wx.cloud.callFunction({
+      name: 'user',
+      data: {
+        action: 'GET_USER_INFO',
+      },
+      success: res => {
+        const { result: { create_date, records } } = res;
+        this.setData({
+          activeDate: create_date,
+          records: records,
+        });
+      },
+    });
   },
   navigateToProfileConsole: function() {
     // 禁用跳转了,

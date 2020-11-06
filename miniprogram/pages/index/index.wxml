@@ -29,4 +29,30 @@
 
     </view>
 
+    <mp-cells ext-class="my-cells" title="" class="user-info-list" style="width: 100%" wx:if="{{userInfo}}">
+        <mp-cell>
+            <view>昵称</view>
+            <view slot="footer">{{userInfo.nickName}}</view>
+        </mp-cell>
+        <mp-cell>
+            <view>记录</view>
+            <view slot="footer" wx:if="{{records!=null}}" style="display: flex;flex-direction: row">{{records}}
+                <view class="tag">条</view>
+            </view>
+            <view slot="footer" wx:else style="min-width: 100rpx">
+                <mp-loading duration="{{900}}" ext-class="demo0" type="dot-gray"  animated="{{true}}">
+                </mp-loading>
+            </view>
+        </mp-cell>
+        <mp-cell>
+            <view>激活日期</view>
+            <view slot="footer" wx:if="{{records!=null}}">{{activeDate}}</view>
+            <view slot="footer" wx:else style="min-width: 100rpx">
+                <mp-loading duration="{{900}}" ext-class="demo0" type="dot-gray" animated="{{true}}">
+                </mp-loading>
+            </view>
+        </mp-cell>
+
+    </mp-cells>
+
 </view>
