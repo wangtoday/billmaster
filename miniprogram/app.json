@@ -44,6 +44,7 @@
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
   },
+
   "sitemapLocation": "sitemap.json",
   "style": "v2"
 }
