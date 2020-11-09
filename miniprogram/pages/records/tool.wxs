@@ -1,0 +1,16 @@
+// date格式如：2019-12-12 12:20:00 或者 2019/12/12 12:20:00
+// 太难用了 这个
+var formatYMD = function(date) {
+
+  var date = getDate(date);
+
+  var year = date.getFullYear();
+  var month = date.getMonth() + 1;
+  var day = date.getDay() ;
+  console.log('date: ', date, day);
+
+  return year + '-' + month + '-' + day;
+};
+
+module.exports.formatYMD = formatYMD;
+

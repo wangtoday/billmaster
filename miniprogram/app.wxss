@@ -1,6 +1,6 @@
 @import '/miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss';
 
-
+@import "/style/icon/icon.wxss";
 
 
 /**app.wxss**/

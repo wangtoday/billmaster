@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dayjs": "^1.9.5",
     "weui-miniprogram": "^1.0.6"
   }
 }
