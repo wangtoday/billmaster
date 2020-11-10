@@ -22,16 +22,16 @@ exports.main = async (event, context) => {
 
   // 获取 WX Context (微信调用上下文)，包括 OPENID、APPID、及 UNIONID（需满足 UNIONID 获取条件）等信息
   const wxContext = cloud.getWXContext()
-  const db = cloud.database()
-
-  db.collection('money').aggregate().lookup({
-    from: 'record_type',
-    localField: 'icon',
-    foreignField: '_id',
-    as: 'icon_info',
-  }).end().then(value=>{
-    console.log(value);
-  })
+  // const db = cloud.database()
+  //
+  // db.collection('money').aggregate().lookup({
+  //   from: 'record_type',
+  //   localField: 'icon',
+  //   foreignField: '_id',
+  //   as: 'icon_info',
+  // }).end().then(value=>{
+  //   console.log(value);
+  // })
 
   return {
     event,

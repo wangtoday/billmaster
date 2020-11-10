@@ -12,12 +12,13 @@ const app = getApp();
 export const tabbarController = (tabBar) => {
 
   const { userInfo } = app.globalData;
-
+  console.log(tabBar);
   tabBar.setData({
     list: [
       tabBar.data.list[0],
+      tabBar.data.list[1],
       {
-        ...tabBar.data.list[1],
+        ...tabBar.data.list[2],
         dot: !userInfo,
       },
     ],
@@ -49,14 +50,13 @@ export const recordFormat = (res) => {
 };
 
 export const iconFormat = (originalRes, iconMap) => {
-  console.log('来了吗:: ', originalRes, iconMap);
   originalRes.map(item => {
     if (item.icon) {
       item.iconName = iconMap[item.icon].icon;
     }
 
   });
-  console.log('来了吗:: ');
+
   return originalRes;
 };
 

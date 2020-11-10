@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@miniprogram-component-plus/col": "^1.0.0",
+    "@miniprogram-component-plus/row": "^1.0.0",
     "dayjs": "^1.9.5",
     "weui-miniprogram": "^1.0.6"
   }

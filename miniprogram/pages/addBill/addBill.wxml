@@ -1,0 +1,64 @@
+<view class="bill-container" style="height: {{height}}rpx">
+    <view class="title-tab-container">
+        <!--    头部 tab 页面, 用来切换 支出/ 收入-->
+        <view class="title-tab-item {{selected==1?'title-tab-item-selected':''}}">支出</view>
+        <view class="title-tab-item {{selected==2?'title-tab-item-selected':''}}">收入</view>
+    </view>
+
+    <view class="amount-container">
+        <!--    输入界面, 输入金钱 搭配底部 number pad-->
+        <!--     故这里不是一个 input 而是一个搭配了和下面pad联动的view而已-->
+        {{amount}}
+    </view>
+    <view class="icon-container" style="height: {{height - 168*2 - 280}}rpx">
+        <!--    icon list 所有的 icon -->
+        <!--        TODO: 最后再实现-->
+        <view class="iconfont  icon-fenlei"
+              wx:for="{{iconNumber}}"
+              style="vertical-align:middle;width:20px; "></view>
+
+    </view>
+    <view class="number-pad-container">
+        <!--    输入 number pad 固定在底部-->
+        <view class="number-block">
+
+            <mp-row wx:for-item="subArray" wx:for-index="number_index" wx:key="number_index"
+                    wx:for="{{numberArray}}"
+            >
+                <mp-col span="{{7}}">
+                    <view>
+                        <button class="col">
+                            {{subArray[0].value}}
+                        </button>
+                    </view>
+                </mp-col>
+                <mp-col span="{{7}}">
+                    <view>
+                        <button class="col">
+                            {{subArray[1].value}}
+                        </button>
+                    </view>
+                </mp-col>
+                <mp-col span="{{7}}">
+                    <view>
+                        <button class="col">
+                            {{subArray[2].value}}
+                        </button>
+                    </view>
+                </mp-col>
+                <mp-col span="{{3}}">
+                    <view>
+                        <view class="col"
+                              style="{{subArray[3].action=='save'? subArray[3].value==='保'?'border-bottom:1px solid lightgrey':'border-top:1px solid lightgrey':'' }}">
+                            {{subArray[3].value}}
+                        </view>
+                    </view>
+                </mp-col>
+
+            </mp-row>
+
+
+        </view>
+
+    </view>
+</view>

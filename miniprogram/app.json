@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/records/index",
+    "pages/addBill/addBill",
     "pages/index/index",
     "pages/profile/profileConsole",
     "pages/userConsole/userConsole",
@@ -25,6 +26,12 @@
       {
         "text": "流水",
         "pagePath": "pages/records/index",
+        "iconPath": "images/icon_component.png",
+        "selectedIconPath": "images/icon_component_HL.png"
+      },
+      {
+        "text": "记一笔",
+        "pagePath": "pages/addBill/addBill",
         "iconPath": "images/icon_component.png",
         "selectedIconPath": "images/icon_component_HL.png"
       },

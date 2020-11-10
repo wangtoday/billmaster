@@ -4,8 +4,9 @@
              scroll-top="{{scrollTop}}">
 
 
-    <mp-cells wx:for="{{recordDateArray}}"  wx:for-index="date_index"  wx:for-item="date_item" title="{{date_item}}">
-        <mp-cell wx:for="{{records[date_item]}}" wx:for-index="idx" wx:for-item="record" footer="{{record.amount}}" value="{{record.sub_type}}">
+    <mp-cells wx:for="{{recordDateArray}}"  wx:for-index="date_index" wx:key="date_index" wx:for-item="date_item" title="{{date_item}}">
+        <mp-cell wx:for="{{records[date_item]}}" wx:for-index="idx" wx:key="record" wx:for-item="record" footer="{{record.amount}}"
+                 value="{{record.sub_type}}">
             <image class="iconfont  {{record.iconName? record.iconName:'icon-fenlei'}}"
                    slot="icon" src="{{icon}}" style="margin-right: 16px;vertical-align:middle;width:20px; height:20px;"></image>
             {{record.iconName}}

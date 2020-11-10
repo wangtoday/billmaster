@@ -1,0 +1,61 @@
+.bill-container {
+    padding: 20rpx;
+}
+
+.title-tab-container {
+    display: flex;
+
+    color: lightslategray;
+    height: 100rpx;
+    align-items: center;
+    font-size: 34rpx;
+    font-weight: 400;
+}
+
+.title-tab-container .title-tab-item {
+    margin-right: 20rpx;
+    border: 2px solid #f6f6f6;
+}
+
+.title-tab-item-selected {
+    color: black;
+    border-bottom-color: black !important;
+}
+
+.amount-container {
+    height: 100rpx;
+    color: darkgreen;
+    font-size: 50rpx;
+}
+
+.icon-container {
+    overflow: scroll;
+}
+
+.icon-container .iconfont {
+
+    display: inline-block;
+    margin-right: 10rpx;
+    height: 100rpx;
+}
+
+
+.number-pad-container {
+    background: lightgrey;
+    /*margin-left: -20rpx;*/
+    /*margin-right: -20rpx;*/
+}
+
+button.col {
+    width: 100%;
+}
+
+.col {
+    height: 80rpx;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+

@@ -1,11 +1,17 @@
 const app = getApp();
 Page({
   data: {
-    'selected': 0,
+    'selected': 1,
     'list': [
       {
         'text': '流水',
-        'pagePath':"/pages/records/index",
+        'pagePath': '/pages/records/index',
+        'iconPath': '/images/icon_component.png',
+        'selectedIconPath': '/images/icon_component_HL.png',
+      },
+      {
+        'text': '记一笔',
+        'pagePath': '/pages/addBill/addBill',
         'iconPath': '/images/icon_component.png',
         'selectedIconPath': '/images/icon_component_HL.png',
       },
@@ -32,8 +38,8 @@ Page({
     });
 
   },
-  onGetUserInfo:function(e){
+  onGetUserInfo: function(e) {
     console.log(e);
-  }
+  },
 
 });
