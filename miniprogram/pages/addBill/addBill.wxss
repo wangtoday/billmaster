@@ -42,17 +42,13 @@
 
 .number-pad-container {
     background: lightgrey;
-    /*margin-left: -20rpx;*/
-    /*margin-right: -20rpx;*/
-}
-
-button.col {
-    width: 100%;
+    margin-left: -20rpx;
+    margin-right: -20rpx;
 }
 
 .col {
     height: 80rpx;
-    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;

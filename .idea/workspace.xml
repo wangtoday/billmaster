@@ -20,20 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad95f3eb-15d1-46b9-af88-6c34630e6e3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/miniprogram/pages/addBill/addBill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniprogram/pages/addBill/addBill.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniprogram/pages/addBill/addBill.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniprogram/pages/addBill/addBill.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miniprogram/pages/addBill/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudfunctions/login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cloudfunctions/login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/custom-tab-bar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/custom-tab-bar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/custom-tab-bar/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/custom-tab-bar/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/addBill/addBill.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/addBill/addBill.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/addBill/addBill.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/addBill/addBill.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/addBill/addBill.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/addBill/addBill.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miniprogram/pages/records/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/records/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/pages/records/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/records/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/utils/ui_utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/utils/ui_utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +78,7 @@
       <workItem from="1603442563682" duration="6000" />
       <workItem from="1603443993501" duration="201000" />
       <workItem from="1604300120051" duration="1380000" />
-      <workItem from="1604392145893" duration="42242000" />
+      <workItem from="1604392145893" duration="48301000" />
     </task>
     <task id="LOCAL-00001" summary="add:  登录-&gt;profile 页面-&gt;登出-&gt;index页面 流程">
       <created>1603272821572</created>
@@ -200,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604910637078</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add: 添加记账的页面初稿完成; bug:真机调试有无法显示自定义tabbar的bug">
+      <created>1605001202567</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1605001202567</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,26 +246,29 @@
     <MESSAGE value="bug: 全局手动添加 --weui-RED: #fa5151; 样式, 解决WE-UI 的问题" />
     <MESSAGE value="add: 流水 + 个人中心 骨架 完成" />
     <MESSAGE value="add: 流水页面, 按照日期group并且排序;添加icon支持" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: 流水页面, 按照日期group并且排序;添加icon支持" />
+    <MESSAGE value="add: 添加记账的页面初稿完成; bug:真机调试有无法显示自定义tabbar的bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: 添加记账的页面初稿完成; bug:真机调试有无法显示自定义tabbar的bug" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1018" y="473" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604634341670">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1018" y="473" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1604634341670" />
-    <state x="803" y="293" key="CommitChangelistDialog2" timestamp="1604910636902">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="803" y="301" key="CommitChangelistDialog2" timestamp="1605001202419">
+      <screen x="0" y="23" width="2560" height="1366" />
     </state>
     <state x="803" y="293" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1604910636902" />
+    <state x="803" y="301" key="CommitChangelistDialog2/0.23.2560.1366@0.23.2560.1366" timestamp="1605001202419" />
     <state x="809" y="125" width="922" height="946" key="SettingsEditor" timestamp="1604981723818">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="809" y="125" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1604981723818" />
     <state x="844" y="146" width="922" height="946" key="SettingsEditor/51.23.2509.1417@51.23.2509.1417" timestamp="1603339106027" />
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1604910642500">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="880" y="459" key="Vcs.Push.Dialog.v2" timestamp="1605001208905">
+      <screen x="0" y="23" width="2560" height="1366" />
     </state>
     <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1604910642500" />
+    <state x="880" y="459" key="Vcs.Push.Dialog.v2/0.23.2560.1366@0.23.2560.1366" timestamp="1605001208905" />
     <state x="1054" y="461" width="933" height="518" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1603273136334">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -276,11 +278,11 @@
     </state>
     <state x="968" y="469" width="670" height="530" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1604912123849" />
     <state x="968" y="468" width="670" height="530" key="find.popup/0.23.2560.1366@0.23.2560.1366" timestamp="1605000771396" />
-    <state x="938" y="336" width="684" height="652" key="search.everywhere.popup" timestamp="1604996923451">
+    <state x="938" y="336" width="684" height="652" key="search.everywhere.popup" timestamp="1605083906869">
       <screen x="0" y="23" width="2560" height="1366" />
     </state>
     <state x="938" y="330" width="684" height="687" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1604981198185" />
-    <state x="938" y="336" width="684" height="652" key="search.everywhere.popup/0.23.2560.1366@0.23.2560.1366" timestamp="1604996923451" />
+    <state x="938" y="336" width="684" height="652" key="search.everywhere.popup/0.23.2560.1366@0.23.2560.1366" timestamp="1605083906869" />
     <state x="970" y="348" width="670" height="676" key="search.everywhere.popup/51.23.2509.1417@51.23.2509.1417" timestamp="1603260028008" />
   </component>
 </project>

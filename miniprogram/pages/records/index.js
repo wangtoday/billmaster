@@ -81,6 +81,38 @@ Page({
       },
     });
 
+    const db = wx.cloud.database();
+
+    // 2. 构造查询语句
+    db.collection('money').get({
+      success: (res) => {
+        const { data: listData } = res;
+        //3 . 这次有结果的时候, 进行第三个数据的获取
+        // 但是不用等结果, 用 地址传递的方式来操作就好
+
+        const recordGlobalThis = this;
+        db.collection('record_type').get({
+          success: function(res) {
+            const { data } = res;
+            recordGlobalThis.setData({
+              records: recordFormat(iconFormat(listData, listToObj(data))),
+            });
+          },
+        });
+
+        const recordArray = Object.keys(recordFormat(listData));
+        const sortRecordArray = recordArray.sort(function(a, b) {
+          return dayjs(a).isBefore(dayjs(b)) ? 1 : -1;
+        });
+
+        this.setData({
+          records: recordFormat(listData),
+          recordDateArray: sortRecordArray,
+        });
+
+      },
+    });
+
   },
   upper(e) {
     // console.log(e);
