@@ -36,6 +36,7 @@ export const tabbarController = (tabBar) => {
  */
 export const recordFormat = (res) => {
   const mapObj = {};
+  if (!res) { return {};}
   for (let index = 0; index < res.length; index++) {
     const groupDateCursor = dayjs(res[index].date).format('YYYY-MM-DD');
     if (!mapObj[groupDateCursor]) {

@@ -10,7 +10,7 @@ Page({
     selected: 1,
     previousAction: null,
     numberArray: numberPad,
-    iconNumber: [],
+    iconNumber: [1,2,3,4,5,6,1,2,3,4,5,6,1,2,3,4,5,6],
   },
 
   onLoad: function() {
@@ -39,6 +39,11 @@ Page({
         });
       },
     });
+  },
+  bindToAmount: function (e) {
+    this.setData({
+      amount: e.detail.value
+    })
   },
   calculate: function(event) {
 

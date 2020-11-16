@@ -62,6 +62,7 @@ Page({
           // 获取到信息以后, 把获取的信息填写到 app 的 global 中
 
           const userInfo = { openid: res.result.openid, ...e.detail.userInfo };
+          console.log(userInfo);
           tabbarController(this.getTabBar())
           this.setUserInfoGlobally(userInfo);
 
@@ -95,6 +96,7 @@ Page({
       name: 'user',
       data: {
         action: 'GET_USER_INFO',
+        data: userInfo
       },
       success: res => {
         const { result: { create_date, records } } = res;

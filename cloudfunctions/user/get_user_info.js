@@ -1,6 +1,6 @@
 const dayjs = require('dayjs');
 
-const get_user_info = async (cloud) => {
+const get_user_info = async (cloud,userInfo) => {
   const wxContext = cloud.getWXContext()
   const {
     OPENID: openId
@@ -14,6 +14,8 @@ const get_user_info = async (cloud) => {
     openid: openId
   }).get();
 
+  console.log('user Info: ', userInfo);
+
   if (data && data.length === 0) {
     // // 如果没有, 就在数据表里新建一个user
     try {
@@ -21,7 +23,8 @@ const get_user_info = async (cloud) => {
         data: {
           openid: openId,
           active_status: false,
-          create_stamp: new Date(). getTime() 
+          create_stamp: new Date(). getTime(),
+          ...userInfo,
         }
       });
     } catch (e) {
@@ -39,14 +42,14 @@ const get_user_info = async (cloud) => {
     const {
       data:records
     } = await db.collection('record').where({user_id:openId}).get()
-    
+
     return {
       create_date: dayjs(create_stamp).format('YYYY-MM-DD'),
       records: records.length
     }
   }
 
-  
+
 
 
 

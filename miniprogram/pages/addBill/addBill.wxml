@@ -6,61 +6,64 @@
     </view>
 
     <view class="amount-container">
-        <!--    输入界面, 输入金钱 搭配底部 number pad-->
+        <!--
+        输入界面, 输入金钱 搭配底部 number pad-->
         <!--     故这里不是一个 input 而是一个搭配了和下面pad联动的view而已-->
-        {{amount}}
+        <input class="weui-input" type="number" maxlength="10" bindinput="bindToAmount" placeholder="请输入金额"/>
     </view>
+    <!--    减去底部 number pad 和 上面的高度 所剩下的高度留给 icon container, 内部有scroll-->
     <view class="icon-container" style="height: {{height - 168*2 - 280}}rpx">
-        <!--    icon list 所有的 icon -->
-        <!--        TODO: 最后再实现-->
-<!--        <view class="iconfont  icon-fenlei"-->
-<!--              wx:for="{{iconNumber}}"-->
-<!--              style="vertical-align:middle;width:20px; "></view>-->
+        <!--            icon list 所有的 icon -->
+
+        <view class="iconfont  icon-fenlei"
+              wx:for="{{iconNumber}}"
+              style="vertical-align:middle; "></view>
 
     </view>
-    <view class="number-pad-container">
-        <!--    输入 number pad 固定在底部-->
-        <view class="number-block" style="display: flex; flex-direction: column;">
+    <!--    todo: 禁用 number pad 先, 内部太复杂-->
+    <!--    <view class="number-pad-container">-->
+    <!--        &lt;!&ndash;    输入 number pad 固定在底部&ndash;&gt;-->
+    <!--        <view class="number-block" style="display: flex; flex-direction: column;">-->
 
-            <mp-row wx:for-item="subArray" wx:for-index="number_index" wx:key="number_index"
-                    wx:for="{{numberArray}}"
-            >
-                <mp-col span="{{7}}" >
-                    <view >
-                        <button class="col" style="width: 100%" bindtap="calculate" data-value="{{subArray[0]}}">
-                            {{subArray[0].value}}
-                        </button>
-                    </view>
-                </mp-col>
-                <mp-col span="{{7}}">
-                    <view>
-                        <button class="col" style="width: 100%" bindtap="calculate" data-value="{{subArray[1]}}">
-                            {{subArray[1].value}}
-                        </button>
-                    </view>
-                </mp-col>
-                <mp-col span="{{7}}">
-                    <view>
-                        <button class="col" style="width: 100%" bindtap="calculate" data-value="{{subArray[2]}}">
-                            {{subArray[2].value}}
-                        </button>
-                    </view>
-                </mp-col>
-                <mp-col span="{{3}}">
-                    <view>
-                        <button class="col"
-                                data-value="{{subArray[3]}}"
-                                bindtap="calculate"
-                              style="width:100%;  {{subArray[3].action=='save'? subArray[3].value==='保'?'border-bottom:1px solid lightgrey':'border-top:1px solid lightgrey':'' }}">
-                            {{subArray[3].value}}
-                        </button>
-                    </view>
-                </mp-col>
+    <!--            <mp-row wx:for-item="subArray" wx:for-index="number_index" wx:key="number_index"-->
+    <!--                    wx:for="{{numberArray}}"-->
+    <!--            >-->
+    <!--                <mp-col span="{{7}}">-->
+    <!--                    <view>-->
+    <!--                        <button class="col" style="width: 100%" bindtap="calculate" data-value="{{subArray[0]}}">-->
+    <!--                            {{subArray[0].value}}-->
+    <!--                        </button>-->
+    <!--                    </view>-->
+    <!--                </mp-col>-->
+    <!--                <mp-col span="{{7}}">-->
+    <!--                    <view>-->
+    <!--                        <button class="col" style="width: 100%" bindtap="calculate" data-value="{{subArray[1]}}">-->
+    <!--                            {{subArray[1].value}}-->
+    <!--                        </button>-->
+    <!--                    </view>-->
+    <!--                </mp-col>-->
+    <!--                <mp-col span="{{7}}">-->
+    <!--                    <view>-->
+    <!--                        <button class="col" style="width: 100%" bindtap="calculate" data-value="{{subArray[2]}}">-->
+    <!--                            {{subArray[2].value}}-->
+    <!--                        </button>-->
+    <!--                    </view>-->
+    <!--                </mp-col>-->
+    <!--                <mp-col span="{{3}}">-->
+    <!--                    <view>-->
+    <!--                        <button class="col"-->
+    <!--                                data-value="{{subArray[3]}}"-->
+    <!--                                bindtap="calculate"-->
+    <!--                                style="width:100%;  {{subArray[3].action=='save'? subArray[3].value==='保'?'border-bottom:1px solid lightgrey':'border-top:1px solid lightgrey':'' }}">-->
+    <!--                            {{subArray[3].value}}-->
+    <!--                        </button>-->
+    <!--                    </view>-->
+    <!--                </mp-col>-->
 
-            </mp-row>
+    <!--            </mp-row>-->
 
 
-        </view>
+    <!--        </view>-->
 
-    </view>
+    <!--    </view>-->
 </view>
