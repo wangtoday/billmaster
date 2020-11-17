@@ -12,13 +12,28 @@
         <input class="weui-input" type="number" maxlength="10" bindinput="bindToAmount" placeholder="请输入金额"/>
     </view>
     <!--    减去底部 number pad 和 上面的高度 所剩下的高度留给 icon container, 内部有scroll-->
-    <view class="icon-container" style="height: {{height - 168*2 - 280}}rpx">
+    <view class="icon-container" style="max-height: {{height - 168*2 - 280}}rpx">
         <!--            icon list 所有的 icon -->
 
-        <view class="iconfont  icon-fenlei"
+        <view class="iconfont  icon-{{iconItem.icon}}"
               wx:for="{{iconNumber}}"
-              style="vertical-align:middle; "></view>
+              wx:for-item="iconItem"
+              wx:for-index="idx"
+              wx:key="iconItem._id"
+              data-record_type="{{iconItem}}"
+              data-index="{{idx}}"
+              style="vertical-align:middle; color: {{idx === selectedIcon ? 'darkslateblue':'black'}}"
+              bindtap="setSelectedIcon"
+        >
+            <view style="font-size: 18rpx">{{iconItem.value}}</view>
+        </view>
 
+    </view>
+
+    <view>
+        <button class="col" style="width: 100%" bindtap="createRecord" >
+            创建
+        </button>
     </view>
     <!--    todo: 禁用 number pad 先, 内部太复杂-->
     <!--    <view class="number-pad-container">-->

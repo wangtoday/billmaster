@@ -13,7 +13,7 @@ Page({
     console.log('get the data');
     // 1. 获取数据库引用
     const db = wx.cloud.database();
-
+    const recordGlobalThis = this;
     this.getAllRecords().then(value => {
       console.log('结果在哪里::: ', value);
       const { result: { data: listData } } = value;
@@ -33,7 +33,7 @@ Page({
       });
 
       this.setData({
-        records: recordFormat(listData),
+        // records: recordFormat(listData),  note: todo:  这里有 bug 啊!
         recordDateArray: sortRecordArray,
       });
 
@@ -139,12 +139,14 @@ Page({
     // });
 
     console.log('来啦::: ');
+    const recordGlobalThis  = this;
     this.getAllRecords().then(value => {
       const { result: { data: listData } } = value;
 
       db.collection('record_type').get({
         success: function(res) {
           const { data } = res;
+          console.log(recordFormat(iconFormat(listData, listToObj(data))));
           recordGlobalThis.setData({
             records: recordFormat(iconFormat(listData, listToObj(data))),
           });
@@ -157,7 +159,7 @@ Page({
       });
 
       this.setData({
-        records: recordFormat(listData),
+        // records: recordFormat(listData),
         recordDateArray: sortRecordArray,
       });
 
