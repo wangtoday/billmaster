@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad95f3eb-15d1-46b9-af88-6c34630e6e3b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/BillMaster.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BillMaster.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudfunctions/user/create_default_record_type.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudfunctions/user/default_record_type.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudfunctions/user/get_user_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/cloudfunctions/user/get_user_info.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miniprogram/style/icon/icon.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/style/icon/icon.wxss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +63,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -324,16 +326,16 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1054" y="461" width="933" height="518" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603273136334" />
-    <state x="968" y="468" width="670" height="530" key="find.popup" timestamp="1605516102024">
+    <state x="968" y="468" width="670" height="530" key="find.popup" timestamp="1605581064434">
       <screen x="0" y="23" width="2560" height="1366" />
     </state>
     <state x="968" y="469" width="670" height="530" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1604912123849" />
-    <state x="968" y="468" width="670" height="530" key="find.popup/0.23.2560.1366@0.23.2560.1366" timestamp="1605516102024" />
-    <state x="704" y="255" width="670" height="484" key="search.everywhere.popup" timestamp="1605538770996">
-      <screen x="0" y="23" width="1920" height="1012" />
+    <state x="968" y="468" width="670" height="530" key="find.popup/0.23.2560.1366@0.23.2560.1366" timestamp="1605581064434" />
+    <state x="938" y="336" width="684" height="652" key="search.everywhere.popup" timestamp="1605583659098">
+      <screen x="0" y="23" width="2560" height="1366" />
     </state>
     <state x="938" y="330" width="684" height="687" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1604981198185" />
-    <state x="938" y="336" width="684" height="652" key="search.everywhere.popup/0.23.2560.1366@0.23.2560.1366" timestamp="1605517708754" />
+    <state x="938" y="336" width="684" height="652" key="search.everywhere.popup/0.23.2560.1366@0.23.2560.1366" timestamp="1605583659098" />
     <state x="704" y="255" width="670" height="484" key="search.everywhere.popup/1920.303.1280.777/-1080.23.1080.1897/0.23.1920.1012@0.23.1920.1012" timestamp="1605538770996" />
     <state x="970" y="348" width="670" height="676" key="search.everywhere.popup/51.23.2509.1417@51.23.2509.1417" timestamp="1603260028008" />
   </component>

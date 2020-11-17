@@ -1,4 +1,5 @@
 const dayjs = require('dayjs');
+const createDefaultRecordType = require('./create_default_record_type');
 
 const get_user_info = async (cloud,userInfo) => {
   const wxContext = cloud.getWXContext()
@@ -14,19 +15,26 @@ const get_user_info = async (cloud,userInfo) => {
     openid: openId
   }).get();
 
-  console.log('user Info: ', userInfo);
+  console.log('user Info: ', userInfo,{
+    _id:openId,
+    active_status: false,
+    create_stamp: new Date(). getTime(),
+    ...userInfo,
+  });
 
   if (data && data.length === 0) {
     // // 如果没有, 就在数据表里新建一个user
     try {
       const addStatus = await db.collection('user').add({
         data: {
-          openid: openId,
+          _id:openId,
           active_status: false,
           create_stamp: new Date(). getTime(),
           ...userInfo,
         }
       });
+      //  给用户创建默认的type, 供他使用
+      await createDefaultRecordType(openId)
     } catch (e) {
         console.log('error: ', e)
     }
